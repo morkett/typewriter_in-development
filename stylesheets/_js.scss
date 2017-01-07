@@ -1,0 +1,15 @@
+.js-ani {
+  cursor: pointer;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  -webkit-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+.js-ani-trans {
+  -webkit-transition: -webkit-transform 1s linear;
+  transition: -webkit-transform 1s linear;
+  transition: transform 1s linear;
+  transition: transform 1s linear, -webkit-transform 1s linear;
+}

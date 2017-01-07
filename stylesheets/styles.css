@@ -1,0 +1,341 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+.unselectable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Special Elite';
+  /*width: 100vw;*/
+  /*height: 100vh;*/
+  background-color: #e9e9e9;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+img {
+  position: absolute;
+  width: 800px;
+  /*border: 1px solid red;*/ }
+
+.typewriter {
+  z-index: 20; }
+
+.horizontal {
+  position: absolute;
+  width: 800px;
+  /* border: 1px solid green;*/
+  z-index: 40;
+  /* z-index: 9999;*/ }
+
+.text-wrapper {
+  width: 500px;
+  height: 147.5px;
+  position: absolute;
+  top: 150px;
+  z-index: 10;
+  /* border: 2px solid red;*/
+  padding: 0 130px;
+  overflow: scroll;
+  z-index: 30; }
+  .text-wrapper p {
+    position: absolute;
+    bottom: 30px;
+    border: 1px solid green;
+    height: auto;
+    width: 250px;
+    font-family: 'Special Elite';
+    word-wrap: break-word; }
+
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+
+.sprite-container {
+  position: relative;
+  bottom: -590px;
+  width: 800px;
+  height: 150px;
+  /* border: 2px solid red;*/
+  z-index: 50; }
+
+.sprite {
+  position: absolute;
+  display: none;
+  cursor: pointer;
+  background: url(../images/spritesheet.png);
+  background-repeat: no-repeat; }
+
+.sprite-A {
+  top: 45px;
+  left: 180px;
+  display: block;
+  width: 34px;
+  height: 22px;
+  background-position: -5px -5px; }
+
+.sprite-B {
+  top: 80px;
+  left: 360px;
+  display: block;
+  width: 33px;
+  height: 23px;
+  background-position: -5px -37px; }
+
+.sprite-C {
+  top: 80px;
+  left: 275px;
+  display: block;
+  width: 33px;
+  height: 23px;
+  background-position: -5px -70px; }
+
+.sprite-D {
+  top: 45px;
+  left: 270px;
+  display: block;
+  width: 34px;
+  height: 22px;
+  background-position: -5px -103px; }
+
+.sprite-E {
+  top: 10px;
+  left: 270px;
+  display: block;
+  width: 33px;
+  height: 21px;
+  background-position: -5px -135px; }
+
+.sprite-F {
+  top: 45px;
+  left: 315px;
+  display: block;
+  width: 34px;
+  height: 22px;
+  background-position: -5px -166px; }
+
+.sprite-G {
+  top: 45px;
+  left: 360px;
+  display: block;
+  width: 32px;
+  height: 23px;
+  background-position: -5px -198px; }
+
+.sprite-H {
+  top: 45px;
+  left: 400px;
+  display: block;
+  width: 34px;
+  height: 23px;
+  background-position: -5px -231px; }
+
+.sprite-I {
+  top: 10px;
+  left: 470px;
+  display: block;
+  width: 35px;
+  height: 23px;
+  background-position: -5px -264px; }
+
+.sprite-J {
+  top: 45px;
+  left: 490px;
+  display: block;
+  width: 35px;
+  height: 23px;
+  background-position: -5px -297px; }
+
+.sprite-K {
+  top: 45px;
+  left: 445px;
+  display: block;
+  width: 33px;
+  height: 23px;
+  background-position: -5px -330px; }
+
+.sprite-L {
+  top: 45px;
+  left: 535px;
+  display: block;
+  width: 35px;
+  height: 23px;
+  background-position: -5px -363px; }
+
+.sprite-M {
+  top: 80px;
+  left: 455px;
+  display: block;
+  width: 34px;
+  height: 23px;
+  background-position: -5px -396px; }
+
+.sprite-N {
+  top: 80px;
+  left: 410px;
+  display: block;
+  width: 34px;
+  height: 22px;
+  background-position: -5px -429px; }
+
+.sprite-O {
+  top: 10px;
+  left: 510px;
+  display: block;
+  width: 33px;
+  height: 21px;
+  background-position: -5px -461px; }
+
+.sprite-P {
+  top: 10px;
+  left: 550px;
+  display: block;
+  width: 33px;
+  height: 22px;
+  background-position: -5px -492px; }
+
+.sprite-Q {
+  top: 10px;
+  left: 190px;
+  display: block;
+  width: 32px;
+  height: 22px;
+  /*transform: translate(40px, 0px);*/
+  background-position: -5px -524px; }
+
+.sprite-R {
+  top: 10px;
+  left: 310px;
+  display: block;
+  width: 33px;
+  height: 21px;
+  background-position: -5px -556px; }
+
+.sprite-S {
+  top: 45px;
+  left: 225px;
+  display: block;
+  width: 34px;
+  height: 22px;
+  background-position: -5px -587px; }
+
+.sprite-T {
+  top: 10px;
+  left: 350px;
+  display: block;
+  width: 33px;
+  height: 21px;
+  background-position: -5px -619px; }
+
+.sprite-U {
+  top: 10px;
+  left: 430px;
+  display: block;
+  width: 33px;
+  height: 22px;
+  background-position: -5px -650px; }
+
+.sprite-V {
+  top: 80px;
+  left: 315px;
+  display: block;
+  width: 35px;
+  height: 22px;
+  background-position: -5px -682px; }
+
+.sprite-X {
+  top: 80px;
+  left: 230px;
+  display: block;
+  width: 36px;
+  height: 23px;
+  background-position: -5px -714px; }
+
+.sprite-Y {
+  top: 10px;
+  left: 390px;
+  display: block;
+  width: 34px;
+  height: 20px;
+  background-position: -5px -747px; }
+
+.sprite-Z {
+  top: 80px;
+  left: 190px;
+  display: block;
+  width: 34px;
+  height: 24px;
+  background-position: -5px -777px; }
+
+.sprite-w {
+  top: 10px;
+  left: 230px;
+  display: block;
+  width: 32px;
+  height: 21px;
+  background-position: -5px -811px; }
+
+.js-ani {
+  cursor: pointer;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  -webkit-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px); }
+
+.js-ani-trans {
+  -webkit-transition: -webkit-transform 1s linear;
+  transition: -webkit-transform 1s linear;
+  transition: transform 1s linear;
+  transition: transform 1s linear, -webkit-transform 1s linear; }
+
+/*# sourceMappingURL=styles.css.map */
