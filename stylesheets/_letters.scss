@@ -1,11 +1,10 @@
 .sprite-container {
   position: relative;
-  bottom: -590px;
-  width: 800px;
+  bottom: -540px;
+  width: 500px;
   height: 150px;
-
-  /* border: 2px solid red;*/
-  z-index: 50;
+  border: 2px solid red;
+  z-index: 100;
 }
 
 .sprite {
@@ -18,7 +17,7 @@
 
 .sprite-A {
   top: 45px;
-  left: 180px;
+  left: 30px;
   display: block;
   width: 34px;
   height: 22px;
@@ -27,7 +26,7 @@
 
 .sprite-B {
   top: 80px;
-  left: 360px;
+  left: 210px;
   display: block;
   width: 33px;
   height: 23px;
@@ -36,7 +35,7 @@
 
 .sprite-C {
   top: 80px;
-  left: 275px;
+  left: 130px;
   display: block;
   width: 33px;
   height: 23px;
@@ -45,7 +44,7 @@
 
 .sprite-D {
   top: 45px;
-  left: 270px;
+  left: 110px;
   display: block;
   width: 34px;
   height: 22px;
@@ -54,7 +53,7 @@
 
 .sprite-E {
   top: 10px;
-  left: 270px;
+  left: 110px;
   display: block;
   width: 33px;
   height: 21px;
@@ -63,7 +62,7 @@
 
 .sprite-F {
   top: 45px;
-  left: 315px;
+  left: 150px;
   display: block;
   width: 34px;
   height: 22px;
@@ -72,7 +71,7 @@
 
 .sprite-G {
   top: 45px;
-  left: 360px;
+  left: 190px;
   display: block;
   width: 32px;
   height: 23px;
@@ -81,7 +80,7 @@
 
 .sprite-H {
   top: 45px;
-  left: 400px;
+  left: 230px;
   display: block;
   width: 34px;
   height: 23px;
@@ -90,7 +89,7 @@
 
 .sprite-I {
   top: 10px;
-  left: 470px;
+  left: 310px;
   display: block;
   width: 35px;
   height: 23px;
@@ -99,7 +98,7 @@
 
 .sprite-J {
   top: 45px;
-  left: 490px;
+  left: 270px;
   display: block;
   width: 35px;
   height: 23px;
@@ -108,7 +107,7 @@
 
 .sprite-K {
   top: 45px;
-  left: 445px;
+  left: 310px;
   display: block;
   width: 33px;
   height: 23px;
@@ -117,7 +116,7 @@
 
 .sprite-L {
   top: 45px;
-  left: 535px;
+  left: 350px;
   display: block;
   width: 35px;
   height: 23px;
@@ -126,7 +125,7 @@
 
 .sprite-M {
   top: 80px;
-  left: 455px;
+  left: 290px;
   display: block;
   width: 34px;
   height: 23px;
@@ -135,7 +134,7 @@
 
 .sprite-N {
   top: 80px;
-  left: 410px;
+  left: 250px;
   display: block;
   width: 34px;
   height: 22px;
@@ -144,7 +143,7 @@
 
 .sprite-O {
   top: 10px;
-  left: 510px;
+  left: 350px;
   display: block;
   width: 33px;
   height: 21px;
@@ -153,7 +152,7 @@
 
 .sprite-P {
   top: 10px;
-  left: 550px;
+  left: 385px;
   display: block;
   width: 33px;
   height: 22px;
@@ -162,7 +161,7 @@
 
 .sprite-Q {
   top: 10px;
-  left: 190px;
+  left: 35px;
   display: block;
   width: 32px;
   height: 22px;
@@ -174,7 +173,7 @@
 
 .sprite-R {
   top: 10px;
-  left: 310px;
+  left: 150px;
   display: block;
   width: 33px;
   height: 21px;
@@ -183,7 +182,7 @@
 
 .sprite-S {
   top: 45px;
-  left: 225px;
+  left: 70px;
   display: block;
   width: 34px;
   height: 22px;
@@ -192,7 +191,7 @@
 
 .sprite-T {
   top: 10px;
-  left: 350px;
+  left: 190px;
   display: block;
   width: 33px;
   height: 21px;
@@ -201,7 +200,7 @@
 
 .sprite-U {
   top: 10px;
-  left: 430px;
+  left: 270px;
   display: block;
   width: 33px;
   height: 22px;
@@ -210,7 +209,7 @@
 
 .sprite-V {
   top: 80px;
-  left: 315px;
+  left: 170px;
   display: block;
   width: 35px;
   height: 22px;
@@ -219,7 +218,7 @@
 
 .sprite-X {
   top: 80px;
-  left: 230px;
+  left: 90px;
   display: block;
   width: 36px;
   height: 23px;
@@ -228,7 +227,7 @@
 
 .sprite-Y {
   top: 10px;
-  left: 390px;
+  left: 230px;
   display: block;
   width: 34px;
   height: 20px;
@@ -237,7 +236,7 @@
 
 .sprite-Z {
   top: 80px;
-  left: 190px;
+  left: 50px;
   display: block;
   width: 34px;
   height: 24px;
@@ -246,7 +245,7 @@
 
 .sprite-w {
   top: 10px;
-  left: 230px;
+  left: 70px;
   display: block;
   width: 32px;
   height: 21px;

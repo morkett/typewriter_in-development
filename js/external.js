@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  $('.block').hide();
+
   $(".sprite").click(function(){
     $(this).addClass('js-ani');
     setTimeout(function () {
@@ -7,12 +9,19 @@ $(document).ready(function() {
     }, 400);
   });
 
-  var move = 10;
+  $(".spacebar").click(function(){
+    $(this).addClass('js-ani-spacebar');
+    setTimeout(function () {
+      $(".spacebar").removeClass('js-ani-spacebar');
+    }, 400);
+  });
+
+  var move = 120;
   $(document).ready(function(){
-  	$('.sprite').click(function(){
+  	$('.key').click(function(){
         if (
-  		$('.horizontal').css("transform","translateX("+move+"px)"));
-  		move = move + 10;
+  		$('.horizontal2, .text-wrapper, .after').css("transform","translateX("+move+"px)"));
+  		move = move - 10;
 
   	});
   });
@@ -22,20 +31,28 @@ $(document).ready(function() {
 
   var count = 0;
 $(document).ready(function(){
-  $('.sprite').click(function () {
+  $('.key').click(function () {
     count += 1;
 
     if (count >= 24) {
-      $('.horizontal').addClass('js-ani-trans');
-      $('.horizontal').css("transform","translateX(0)");
+      $('.horizontal2, .text-wrapper, .after').addClass('js-ani-trans');
+      $('.block').show();
+      $('.horizontal2, .text-wrapper, .after').css("transform","translateX(120px)");
+      $('div p').append("</br>");
+      document.getElementById('ding-sound').play();
+
+      setTimeout(function () {
+        $('.block').hide();
+      }, 1000);
+
       // TODO:  //PREVENT CLICK  / DISABLE FUNCTION THEN ENABLE AFTER TIMEOUT
 
        count = 0;
-       move = 10;
+       move = 120;
     }
 
-if (move > 10) {
-  $('.horizontal').removeClass('js-ani-trans');
+if (move < 120) {
+  $('.horizontal2, .text-wrapper, .after').removeClass('js-ani-trans');
     }
   });
   });
@@ -46,20 +63,25 @@ if (move > 10) {
 
   //audio
 
-    var audioElement = document.createElement('audio');
-    audioElement.setAttribute('src', 'sounds/typewriter-cut.wav');
-    audioElement.setAttribute('autoplay', 'autoplay');
+    var typesound = document.createElement('audio');
+    typesound.setAttribute('src', 'sounds/typewriter-cut.wav');
+    typesound.setAttribute('autoplay', 'autoplay');
     //audioElement.load()
 
     $.get();
 
-    audioElement.addEventListener("load", function() {
-        audioElement.play();
+    typesound.addEventListener("load", function() {
+        typesound.play();
     }, true);
 
-    $('.sprite').click(function() {
-        audioElement.play();
+    $('.key').click(function() {
+        typesound.play();
     });
+
+
+
+
+
 
 
     $('.sprite-A').click(function(){
@@ -139,6 +161,9 @@ if (move > 10) {
       });
       $('.sprite-Z').click(function(){
         $('div p').append('Z');
+      });
+      $('.spacebar').click(function(){
+        $('div p').append(" ");
       });
 
 

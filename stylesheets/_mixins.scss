@@ -1,24 +1,31 @@
-////////  MIXINS ////////
+/*//////  MIXINS ////////*/
 
-//////// PSEUDO ////////
+/*////// PSEUDO ////////*/
 @mixin pseudo($display: block, $pos: absolute, $content: "") {
   content: $content;
   display: $display;
   position: $pos;
 }
 
-//////// FLEXBOX ////////
+/*////// FLEXBOX ////////*/
 
 @mixin flexbox($display: flex, $direction: column, $justify: center, $align: center) {
   display: $display;
+  -webkit-box-pack: $justify;
+  -ms-flex-pack: $justify;
   justify-content: $justify;
+  -webkit-box-align: $align;
+  -ms-flex-align: $align;
   align-items: $align;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: $direction;
   flex-direction: $direction;
   top: 0;
   left: 0;
 }
 
-//////// FONTS ////////
+/*////// FONTS ////////*/
 
 @mixin font-properties($letter-spacing, $font-size, $line-height: 1) {
   font-family: $font-family;
