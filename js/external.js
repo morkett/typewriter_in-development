@@ -2,6 +2,13 @@ $(document).ready(function() {
 
   $('.block').hide();
 
+  $('.key').click(function(){
+    $('.typer').addClass('typer-trans');
+    setTimeout(function () {
+    $('.typer').removeClass('typer-trans');
+  }, 100);
+  });
+
   $(".sprite").click(function(){
     $(this).addClass('js-ani');
     setTimeout(function () {
@@ -163,10 +170,253 @@ if (move < 120) {
         $('div p').append('Z');
       });
       $('.spacebar').click(function(){
-        $('div p').append(" ");
+        $('div p').append("&nbsp;");
       });
 
 
 
+
+});
+
+//keybinds
+
+$(document).keydown(function(e) {
+    if(e.which == 65) {
+        $('div p').append('A');
+        $('.sprite-A').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 66) {
+        $('div p').append('B');
+        $('.sprite-B').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 67) {
+        $('div p').append('C');
+        $('.sprite-C').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 68) {
+        $('div p').append('D');
+        $('.sprite-D').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 69) {
+        $('div p').append('E');
+        $('.sprite-E').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 70) {
+        $('div p').append('F');
+        $('.sprite-F').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 71) {
+        $('div p').append('G');
+        $('.sprite-G').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 72) {
+        $('div p').append('H');
+        $('.sprite-H').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 73) {
+        $('div p').append('I');
+        $('.sprite-I').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 74) {
+        $('div p').append('J');
+        $('.sprite-J').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 75) {
+        $('div p').append('K');
+        $('.sprite-K').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 76) {
+        $('div p').append('L');
+        $('.sprite-L').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 77) {
+        $('div p').append('M');
+        $('.sprite-M').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 78) {
+        $('div p').append('N');
+        $('.sprite-N').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 79) {
+        $('div p').append('O');
+        $('.sprite-O').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 80) {
+        $('div p').append('P');
+        $('.sprite-P').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 81) {
+        $('div p').append('Q');
+        $('.sprite-Q').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 82) {
+        $('div p').append('R');
+        $('.sprite-R').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 83) {
+        $('div p').append('S');
+        $('.sprite-S').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 84) {
+        $('div p').append('T');
+        $('.sprite-T').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 85) {
+        $('div p').append('U');
+        $('.sprite-U').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 86) {
+        $('div p').append('V');
+        $('.sprite-V').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 87) {
+        $('div p').append('W');
+        $('.sprite-w').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 88) {
+        $('div p').append('X');
+        $('.sprite-X').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 89) {
+        $('div p').append('Y');
+        $('.sprite-Y').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which ==90) {
+        $('div p').append('Z');
+        $('.sprite-Z').addClass('js-ani');
+          setTimeout(function () {
+            $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    if(e.which == 13) {
+        $('div p').append('</br>');
+    }
 
 });

@@ -38,6 +38,16 @@ img {
   top: 150px;
 }
 
+.typewriter:before {
+  content: 'hello world';
+  position: absolute;
+  height: 100px;
+  width: 500px;
+  background-color: red;
+  top: 0;
+  left: 0;
+}
+
 .horizontal {
   position: absolute;
   width: 700px;
@@ -111,6 +121,24 @@ img {
     word-wrap: break-word;
     overflow: scroll;
   }
+}
+
+.typer {
+  height: 30px;
+  width: 10px;
+  background-color: #000;
+  position: absolute;
+  top: 320px;
+  -webkit-transform: translateX(6px) translateY(25px);
+  -ms-transform: translateX(6px) translateY(25px);
+  transform: translateX(6px) translateY(25px);
+  z-index: 50;
+}
+
+.typer-trans {
+  -webkit-transform: translateX(6px) translateY(0px);
+  -ms-transform: translateX(6px) translateY(0px);
+  transform: translateX(6px) translateY(0px);
 }
 
 .block {
