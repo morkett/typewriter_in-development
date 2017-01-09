@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $('.block').hide();
+  // $('.block').hide();
 
   $('.key').click(function(){
     $('.typer').addClass('typer-trans');
@@ -43,14 +43,14 @@ $(document).ready(function(){
 
     if (count >= 24) {
       $('.horizontal2, .text-wrapper, .after').addClass('js-ani-trans');
-      $('.block').show();
+      // $('.block').show();
       $('.horizontal2, .text-wrapper, .after').css("transform","translateX(120px)");
       $('div p').append("</br>");
       document.getElementById('ding-sound').play();
 
-      setTimeout(function () {
-        $('.block').hide();
-      }, 1000);
+      // setTimeout(function () {
+      //   $('.block').hide();
+      // }, 1000);
 
       // TODO:  //PREVENT CLICK  / DISABLE FUNCTION THEN ENABLE AFTER TIMEOUT
 
@@ -411,6 +411,16 @@ $(document).keydown(function(e) {
         $('.sprite-Z').addClass('js-ani');
           setTimeout(function () {
             $(".sprite").removeClass('js-ani');
+          }, 400);
+
+    }
+
+    //spacebar
+    if(e.which ==32) {
+        $('div p').append('&nbsp;');
+        $('.spacebar').addClass('js-ani-spacebar');
+          setTimeout(function () {
+            $(".spacebar").removeClass('js-ani-spacebar');
           }, 400);
 
     }
