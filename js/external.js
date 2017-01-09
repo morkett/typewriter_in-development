@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
-  // $('.block').hide();
+  $('.block').hide();
 
-  $('.key').click(function(){
-    $('.typer').addClass('typer-trans');
-    setTimeout(function () {
-    $('.typer').removeClass('typer-trans');
-  }, 100);
-  });
+  // $('.key').click(function(){
+  //   $('.typer').addClass('typer-trans');
+  //   setTimeout(function () {
+  //   $('.typer').removeClass('typer-trans');
+  // }, 100);
+  // });
 
   $(".sprite").click(function(){
     $(this).addClass('js-ani');
@@ -43,14 +43,14 @@ $(document).ready(function(){
 
     if (count >= 24) {
       $('.horizontal2, .text-wrapper, .after').addClass('js-ani-trans');
-      // $('.block').show();
+      $('.block').show();
       $('.horizontal2, .text-wrapper, .after').css("transform","translateX(120px)");
       $('div p').append("</br>");
       document.getElementById('ding-sound').play();
 
-      // setTimeout(function () {
-      //   $('.block').hide();
-      // }, 1000);
+      setTimeout(function () {
+        $('.block').hide();
+      }, 1000);
 
       // TODO:  //PREVENT CLICK  / DISABLE FUNCTION THEN ENABLE AFTER TIMEOUT
 
