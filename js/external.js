@@ -24,20 +24,20 @@ $(document).ready(function() {
   });
 
   var move = 120;
-  $(document).ready(function(){
+
   	$('.key').click(function(){
         if (
   		$('.horizontal2, .text-wrapper, .after').css("transform","translateX("+move+"px)"));
   		move = move - 10;
 
   	});
-  });
+
 
   //return
 
 
   var count = 0;
-$(document).ready(function(){
+
   $('.key').click(function () {
     count += 1;
 
@@ -61,8 +61,8 @@ $(document).ready(function(){
 if (move < 120) {
   $('.horizontal2, .text-wrapper, .after').removeClass('js-ani-trans');
     }
-  });
-  });
+
+
 
 
 
@@ -85,7 +85,7 @@ if (move < 120) {
         typesound.play();
     });
 
-
+});
 
 
 
@@ -187,8 +187,44 @@ $(document).keydown(function(e) {
           setTimeout(function () {
             $(".sprite").removeClass('js-ani');
           }, 400);
+          // var move = 120;
+          //
+          //
+          //     $('.horizontal2, .text-wrapper, .after').css("transform","translateX("+move+"px)");
+          //     move = move - 10;
+          //
+          //
+          //     var count = 0;
+          //
+          //
+          //       count += 1;
+          //
+          //       if (count >= 24) {
+          //         $('.horizontal2, .text-wrapper, .after').addClass('js-ani-trans');
+          //         $('.block').show();
+          //         $('.horizontal2, .text-wrapper, .after').css("transform","translateX(120px)");
+          //         $('div p').append("</br>");
+          //         document.getElementById('ding-sound').play();
+          //
+          //         setTimeout(function () {
+          //           $('.block').hide();
+          //         }, 1000);
+          //
+          //         // TODO:  //PREVENT CLICK  / DISABLE FUNCTION THEN ENABLE AFTER TIMEOUT
+          //
+          //          count = 0;
+          //          move = 120;
+          //       }
+          //
+          //   if (move < 120) {
+          //     $('.horizontal2, .text-wrapper, .after').removeClass('js-ani-trans');
+                }
 
-    }
+
+
+
+
+
 
     if(e.which == 66) {
         $('div p').append('B');
@@ -428,5 +464,10 @@ $(document).keydown(function(e) {
     if(e.which == 13) {
         $('div p').append('</br>');
     }
+
+
+
+
+
 
 });
