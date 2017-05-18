@@ -1,0 +1,12 @@
+@keyframes keyDown {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+.ani-keyDown {
+  animation: keyDown .2s linear forwards;
+}

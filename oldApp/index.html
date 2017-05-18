@@ -9,11 +9,10 @@
   <meta http-equiv="author" content="David Corkett Designs">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <link href="stylesheets/styles.css" type="text/css" rel="stylesheet">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet" type="text/css">
+  <!--build:css css/styles.min.css-->
+  <link type="text/css" rel="stylesheet" href="css/styles.css" />
+  <!--endbuild-->
 
-  <script src="js/external.js"></script>
   </head>
 
 
@@ -38,7 +37,7 @@
     </div> -->
 
 <div class="sprite-container">
-    <i class="key sprite sprite-A"></i>
+<i class="key sprite sprite-A"></i>
 <i class="key sprite sprite-B"></i>
 <i class="key sprite sprite-C"></i>
 <i class="key sprite sprite-D"></i>
@@ -70,6 +69,13 @@
   <div class="block"></div>
   <audio id="ding-sound" src="sounds/ding.wav"></audio>
 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet" type="text/css">
 
+  <!-- build:js js/external.min.js-->
+  <script src="js/external.js"></script>
+  <!-- endbuild -->
 </body>
+
+
 </html>

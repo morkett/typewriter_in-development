@@ -1,3 +1,20 @@
+// // NEW JS
+//
+// var clickity = document.querySelector(".key");
+//
+// clickity.addEventListener("click", function(e){
+//   clickity.classList.add("js-ani");
+//
+//   setTimeout(function(){
+//    clickity.classList.remove('js-ani');
+//    }, 500);
+//
+// })
+
+
+
+
+
 $(document).ready(function() {
 
   $('.block').hide();

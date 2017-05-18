@@ -1,0 +1,40 @@
+@import "resets";
+@import "config";
+@import "mixins";
+
+.unselectable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+body {
+  @include flex;
+  position: relative;
+  border: $border-dev-green;
+  // height: 100vh;
+
+  background-color: #e3e3e3;
+  overflow: hidden;
+}
+
+.horizontal {
+  position: absolute;
+  top: 200px;
+}
+
+.horizontal2 {
+  position: absolute;
+  top: 200px;
+}
+
+.after {
+  position: absolute;
+  top: 78px;
+  transform: translateX(-50px);
+}
+
+
+@import "letters";
+@import "animations";
+@import "js";
